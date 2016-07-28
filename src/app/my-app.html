@@ -1,0 +1,11 @@
+<h1>User Agent =
+	<span *ngIf="modelTable.UAInfo?.os.name==='iOS'">
+		Apple Device
+	</span>
+	<span *ngIf="modelTable.UAInfo?.os.name==='Android'">
+		Android Device
+	</span>
+	<span *ngIf="modelTable.UAInfo?.os.name!=='Android' && modelTable.UAInfo?.os.name!=='iOS'">
+		Desktop
+	</span>
+</h1>
